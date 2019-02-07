@@ -1,5 +1,14 @@
 /* red: #D0021B */
 
+* {
+  border: 1px solid orange;
+  margin: -1px;
+}
+div {
+  border: 1px dashed blue;
+  margin: -1px;
+}
+
 body {
   font-family: sans-serif;
 }
