@@ -1,3 +1,7 @@
+---
+permalink: /index.html
+---
+
 # In-Class Exercise 2 : Done
 
 This is the solution to in-class exercise 2.
