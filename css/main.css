@@ -1,18 +1,19 @@
 /* red: #D0021B */
 
-* {
+/* * {
   border: 1px solid orange;
   margin: -1px;
 }
 div {
   border: 1px dashed blue;
   margin: -1px;
-}
+} */
 
 body {
   font-family: sans-serif;
 }
-
+/* Layout Styles
+---------------------------------- */
 .row {
   display: flex;
 }
@@ -20,21 +21,24 @@ body {
   display: flex;
   flex-direction: column;
 }
-.three-fifths {
-  flex: 5
 
+/* Size Ratio 3 : 2 */
+.three-fifths {
+  flex: 3;
 }
 .two-fifths {
-  flex: 2
+  flex: 2;
 }
 
+/* Size Ratio 2 : 1 */
 .two-thirds {
-  flex: 2
+  flex: 2;
 }
 .one-thirds {
-  flex: 1
+  flex: 1;
 }
 
+/* Size Ratio 2 : 5 */
 .two-sevenths {
   flex: 2;
 }
@@ -42,29 +46,9 @@ body {
   flex: 5;
 }
 
-/* Page 1 Specific Styles
+
+/* Page 1 Styles
 ---------------------------------- */
-#drop-cap {
-  padding-top: 100px;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 100px;
-}
-
-#title-area {
-  text-transform: uppercase;
-  flex:1;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-#title-area h1 {
-  margin: 0 0.4rem;
-}
-#title-area h1:nth-child(2) span {
-  border-bottom: 10px solid #D0021B;
-}
-
 #title-area h1:nth-child(1) {
   margin-left: -3rem;
 }
@@ -72,26 +56,47 @@ body {
   letter-spacing: 0.3rem;
   margin-bottom: 4rem;
 }
-
+#title-area h1:nth-child(2) span {
+  border-bottom: 10px solid #D0021B;
+}
+#drop-cap {
+  padding-top: 100px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 100px;
+}
 #title-top {
   height: 200px;
   border-bottom: 10px solid black;
-  display: flex;
-  flex-direction: column;
   justify-content: flex-end;
+}
 
+#title-area {
+  flex:1;
+  align-items: stretch;
 }
 #title-bottom {
   padding-top: 100px;
 }
+
+#title-area h1 {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-right: 0.4rem;
+  margin-bottom: 0;
+  margin-left: 0.4rem;
+}
+
 #title-bottom h2 {
+  text-transform: uppercase;
   writing-mode: vertical-lr;
-  text-orientation: mixed;
-  transform: rotate(180deg);
+	text-orientation: mixed;
+	transform: rotate(180deg);
   margin-right: 0;
 }
+
 #title-bottom h3 {
-  margin: 0;
+  margin: 0 0 0 0;
   font-weight: lighter;
 }
 
@@ -100,6 +105,7 @@ body {
   border-left: 10px solid black;
   border-bottom: 10px solid black;
 }
+
 #leader-bottom {
   border-left: 10px solid black;
   border-bottom: 10px solid black;
@@ -108,6 +114,8 @@ body {
   align-items: flex-end;
   padding: 1rem;
 }
+
+
 #leader-bottom h4, #leader-bottom h5, #leader-bottom h6 {
   text-transform: uppercase;
   writing-mode: vertical-lr;
@@ -116,8 +124,8 @@ body {
 
 #leader-bottom h5 {
   font-weight: lighter;
-  font-size: 2.18rem;
-  margin: 0 1.5rem 0 0;
+	font-size: 2.18rem;
+	margin: 0 1.5rem 0 0;
 }
 
 #leader-bottom h6 {
@@ -130,8 +138,7 @@ body {
   padding-right: 0.8rem;
 }
 
-
-/* Page 2 Specific Styles
+/* Page 2 Styles
 ---------------------------------- */
 #page-2 {
   padding: 50px;
@@ -142,10 +149,7 @@ body {
   width: 100%;
   background-size: cover;
 }
-#studio-image img {
-  width: 100%;
-  display: none;
-}
+
 #studio-caption {
   justify-content: flex-end;
 }
@@ -153,43 +157,44 @@ body {
   display: flex;
   align-items: flex-end;
 }
-.caption-year h3{
+
+.caption-year h3 {
   margin: 0 0.2rem 0 0;
 }
+.caption-year {
+ text-transform: uppercase;
+ font-size: 1.6rem;
+ margin-bottom: 0.2rem;
+}
+
 .caption-title {
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  margin-bottom: 0.2rem;
-}
-.caption-title span {
   border-top: 0.5rem solid red;
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
+
 .caption-text {
   margin-top: 0.2rem;
   margin-bottom: 0;
 }
 
-/* Page 3 Specific Styles
+/* Page 3 Styles
 ---------------------------------- */
 #page-3 {
   padding: 50px;
 }
 
-#page-3-top {
-  align-items: baseline;
-  margin-bottom: 6vh;
-}
 #page-3 h1 {
   text-transform: uppercase;
   border-top: 0.5rem solid #D0021B;
-  font-size: 4rem;
   font-size: 3rem;
   letter-spacing: 0.3rem;
   margin: 0 0 0 0.5rem;
 }
-#page-3-bottom p {
-  margin-top: 0;
-  padding-left: 20%;
+
+#page-3-top {
+  align-items: baseline;
+  margin-bottom: 6vh;
 }
 
 #architechure-drawing {
@@ -198,36 +203,27 @@ body {
   width: 100%;
   background-size: cover;
 }
-#architechure-drawing img {
-  display: none;
+
+#page-3-bottom p {
+  margin-top: 0;
+  Padding-left: 20%;
 }
 
-/* Page 4 Specific Styles
+
+/* Page 4 Styles
 ---------------------------------- */
-#page-4 {
-  flex-direction: row-reverse;
-}
-#page-4-right p{
-  margin: 0 0.5rem;
-  font-size: 1.1rem;
-  line-height: 1.3;
-}
-#page-4-right p:last-of-type {
-  /* background-color: pink; */
-  padding-bottom: 4rem;
-}
 
-.red-dot-container {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  padding: 0.5rem 0;
-}
 .red-dot {
   width: 1.5rem;
   height: 1.5rem;
   background-color: #D0021B;
   border-radius: 50%;
+}
+.red-dot-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 0.5rem 0;
 }
 
 #more-info {
@@ -235,25 +231,16 @@ body {
   border-top: 0.8rem solid black;
   border-right: 0.8rem solid black;
 }
-#more-info p {
-  color: #D0021B;
-  font-size: 0.8rem;
+
+
+#page-4 {
+  flex-direction: row-reverse;
 }
 
-#return-slip {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  transform: rotate(180deg);
-  display: flex;
-  flex-direction: column;
-}
 #return-slip-header {
   border-left: 0.8rem solid #D0021B;
 }
-#return-slip-header h1 {}
-#return-slip-header h4 {
-  text-align: right;
-}
+
 #return-slip-address-form {
   display: flex;
   align-items: stretch;
@@ -266,8 +253,6 @@ body {
 }
 #return-slip-address-form .right-side {
   flex: 5;
-  padding: 2rem 1rem 0 0;
-  text-transform: uppercase;
 }
 #return-slip-address-form .right-side h2 {
   margin: 0;
@@ -277,4 +262,30 @@ body {
 }
 #return-slip-address-form .right-side h5 span {
   border-left: 2px solid white;
+}
+
+
+#page-4-right p {
+  margin: 0 0.5rem;
+  font-size: 1.1rem;
+  line-height: 1.3;
+}
+
+#more-info p {
+  color: #D0021B;
+  font-size: 0.8rem;
+}
+
+#return-slip {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+}
+
+#return-slip-header h4 {
+  text-align: right;
+}
+#return-slip-address-form .right-side{
+ padding: 2rem 1rem 0 0;
+ text-transform: uppercase;
 }
