@@ -244,15 +244,15 @@ body {
 #return-slip-address-form {
   display: flex;
   align-items: stretch;
-  flex: 1;
+  flex-grow: 1;
 }
 #return-slip-address-form .left-side {
-  flex: 1;
+  flex-grow: 1;
   border-bottom: 0.8rem solid #D0021B;
   text-align: center;
 }
 #return-slip-address-form .right-side {
-  flex: 5;
+  flex-grow: 5;
 }
 #return-slip-address-form .right-side h2 {
   margin: 0;
@@ -270,6 +270,12 @@ body {
   font-size: 1.1rem;
   line-height: 1.3;
 }
+
+#page-4-right p:last-of-type {
+  /* background-color: pink; */
+  padding-bottom: 4rem;
+}
+
 
 #more-info p {
   color: #D0021B;
